@@ -1,6 +1,6 @@
 const express = require("express");
-// const favicon = require("serve-favicon");
 const path = require("path");
+// const favicon = require("serve-favicon");
 const mongoose = require("mongoose");
 const dotenv = require("dotenv");
 
@@ -11,10 +11,11 @@ const port = 3000;
 dotenv.config();
 mongoose.set("strictQuery", false);
 const mongoDB = process.env.MONGODB_URL;
+
+dbConnection().catch((err) => console.log(err));
 async function dbConnection() {
     await mongoose.connect(mongoDB);
 }
-dbConnection().catch((err) => console.log(err));
 
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");
