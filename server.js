@@ -1,8 +1,8 @@
 const express = require("express");
 const path = require("path");
-// const favicon = require("serve-favicon");
 const mongoose = require("mongoose");
 const dotenv = require("dotenv");
+// const favicon = require("serve-favicon");
 
 const indexRouter = require("./routes/index");
 
