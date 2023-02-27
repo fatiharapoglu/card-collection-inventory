@@ -1,21 +1,14 @@
 const express = require("express");
 const path = require("path");
 const mongoose = require("mongoose");
-const dotenv = require("dotenv");
+require("dotenv").config();
 // const favicon = require("serve-favicon");
 
 const indexRouter = require("./routes/index");
 
 const app = express();
-const port = 3000;
-dotenv.config();
-mongoose.set("strictQuery", false);
-const mongoDB = process.env.MONGODB_URL;
-
-dbConnection().catch((err) => console.log(err));
-async function dbConnection() {
-    await mongoose.connect(mongoDB);
-}
+const port = process.env.PORT || 3000;
+const mongoDB = process.env.MONGODB_URI;
 
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");
@@ -27,6 +20,16 @@ app.use(express.static(path.join(__dirname, "public")));
 
 app.use("/", indexRouter);
 
-app.listen(port, () => console.log(`Listening on port ${port}...`));
+mongoose.set("strictQuery", false);
+
+dbConnection();
+async function dbConnection() {
+    try {
+        await mongoose.connect(mongoDB);
+        app.listen(port, () => console.log(`Listening on port ${port}...`));
+    } catch (err) {
+        console.log(err);
+    }
+}
 
 module.exports = app;
