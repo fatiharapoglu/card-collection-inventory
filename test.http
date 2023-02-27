@@ -1,0 +1,13 @@
+POST http://localhost:3000/cards HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Geralt",
+    "power": 20,
+    "provision": 10 ,
+    "faction": "Neutral",
+    "type": "Witcher"
+}
+
+### 
+http://localhost:3000/cards
