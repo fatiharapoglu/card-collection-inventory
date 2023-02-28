@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+}
+
+footer a {
+    color: lightblue;
+}
+
+footer a:hover {
+    color: aqua;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.card {
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.card h2 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.card p {
+    font-size: 16px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.collection {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 1rem;
+    justify-content: center;
+}
+
+.collection button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.collection button:hover {
+    background-color: #555;
+}
+
+.edit-form {
+    display: none;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.edit-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.edit-form input[type="text"],
+.edit-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.edit-form button[type="submit"] {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.edit-form button[type="submit"]:hover {
+    background-color: #555;
+}
+
+.edit-form button[type="button"] {
+    padding: 10px;
+    background-color: #ccc;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.edit-form button[type="button"]:hover {
+    background-color: #bbb;
+}
+
+.index {
+    height: 87.85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+input[type="text"] {
+    width: 33%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 1rem;
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 1.5;
+}

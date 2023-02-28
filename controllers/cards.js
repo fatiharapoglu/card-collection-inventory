@@ -6,8 +6,8 @@ const addCard = async (req, res) => {
 };
 
 const getAllCards = async (req, res) => {
-    const card = await Card.find({});
-    res.status(200).json({ card });
+    const cards = await Card.find({});
+    res.status(200).render("cards", { cards });
 };
 
 const getCard = async (req, res) => {
