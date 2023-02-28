@@ -10,8 +10,10 @@ const start = async () => {
         await Card.deleteMany();
         await Card.create(jsonCards);
         console.log("Populated.");
+        process.exit(0);
     } catch (error) {
         console.log(error);
+        process.exit(1);
     }
 };
 
