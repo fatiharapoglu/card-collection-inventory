@@ -92,6 +92,16 @@ footer a:hover {
 }
 
 .single-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.single-card img {
+    max-width: 100%;
+    height: auto;
+    translate: -40px;
 }
 
 .single-card button {

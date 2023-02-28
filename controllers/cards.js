@@ -8,7 +8,7 @@ const getAllCards = async (req, res) => {
 const getCard = async (req, res) => {
     const { id: cardID } = req.params;
     const card = await Card.findOne({ _id: cardID });
-    res.status(200).json({ card });
+    res.status(200).render("card", { card });
 };
 
 const deleteCard = async (req, res) => {

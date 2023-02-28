@@ -14,10 +14,10 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 app.set("view engine", "ejs");
-app.use(express.json());
-app.use(express.static("./public"));
-app.use(express.urlencoded({ extended: false }));
+app.use(express.static("public"));
 app.use(expressLayouts);
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
 
 app.use("/", indexRouter);
 app.use("/cards", cardsRouter);

@@ -12,3 +12,6 @@ content-type: application/json
 ### 
 http://localhost:3000/cards
 
+### 
+http://localhost:3000/cards/63fe2fdb510fdf3690f6386f
+

@@ -1,20 +1,14 @@
 <div class="container">
     <div class="single-card">
-        <img src="assets/card.webp" alt="card" />
+        <img src="assets/card.webp" alt="<%= card.name %>" />
         <h2><%= card.name %></h2>
-        <p><%= card.power %></p>
-        <p><%= card.provision %></p>
-        <p><%= card.faction %></p>
-        <p><%= card.type %></p>
-        <button class="edit-btn">Edit</button>
-        <button class="delete-btn">Delete</button>
-        <form class="edit-form">
-            <label for="card-name">Card Name:</label>
-            <input type="text" id="card-name" name="card-name" required />
-            <label for="card-description">Card Description:</label>
-            <textarea id="card-description" name="card-description" required></textarea>
+        <p>Power: <span class="properties"><%= card.power %></span></p>
+        <p>Provision: <span class="properties"><%= card.provision %></span></p>
+        <p>Faction: <span class="properties"><%= card.faction %></span></p>
+        <p>Type: <span class="properties"><%= card.type %></span></p>
+        <div class="buttons">
             <button type="submit">Save</button>
             <button type="button" class="cancel-btn">Cancel</button>
-        </form>
+        </div>
     </div>
 </div>

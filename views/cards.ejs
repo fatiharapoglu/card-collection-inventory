@@ -3,7 +3,7 @@
         <% cards.forEach(card => { %>
         <li class="card">
             <a href="/cards/<%= card._id %>"
-                ><img src="assets/card.webp" alt="<%= card.name %>"
+                ><img src="./assets/card.webp" alt="<%= card.name %>"
             /></a>
             <h2><%= card.name %></h2>
             <p>Power: <span class="properties"><%= card.power %></span></p>
