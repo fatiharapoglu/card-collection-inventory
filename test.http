@@ -1,4 +1,4 @@
-POST http://localhost:3000/cards HTTP/1.1
+POST http://localhost:3000/new HTTP/1.1
 content-type: application/json
 
 {
@@ -11,3 +11,4 @@ content-type: application/json
 
 ### 
 http://localhost:3000/cards
+

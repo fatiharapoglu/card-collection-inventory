@@ -1,10 +1,5 @@
 const Card = require("../models/card");
 
-const addCard = async (req, res) => {
-    const card = await Card.create(req.body);
-    res.status(201).json({ card });
-};
-
 const getAllCards = async (req, res) => {
     const cards = await Card.find({});
     res.status(200).render("cards", { cards });
@@ -31,4 +26,4 @@ const editCard = async (req, res) => {
     res.status(200).json({ card });
 };
 
-module.exports = { getAllCards, getCard, deleteCard, addCard, editCard };
+module.exports = { getAllCards, getCard, deleteCard, editCard };

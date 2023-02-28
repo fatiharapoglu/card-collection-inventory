@@ -1,0 +1,23 @@
+<div class="wrapper">
+    <form class="form" method="post" action="/new">
+        <label for="name">Name:</label>
+        <input type="text" name="name" placeholder="Card name" required />
+        <label for="power">Power:</label>
+        <input type="number" name="power" placeholder="Power (number)" required />
+        <label for="provision">Provision:</label>
+        <input type="number" name="provision" placeholder="Provision (number)" required />
+        <label for="faction">Faction:</label>
+        <input
+            type="text"
+            name="faction"
+            placeholder="Faction name (nilfgaard, neutral etc.)"
+            required
+        />
+        <label for="type">Type:</label>
+        <input type="text" name="type" placeholder="Type (unit, leader etc.)" required />
+        <div class="buttons">
+            <button type="submit">Create</button>
+            <a class="cancel-btn" href="/">Cancel</a>
+        </div>
+    </form>
+</div>

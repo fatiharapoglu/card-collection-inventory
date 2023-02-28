@@ -54,17 +54,25 @@ footer a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-radius: 1rem;
 }
 
 .card img {
     max-width: 100%;
+    width: 300px;
     height: auto;
+    translate: -25px;
+    transition: all 0.2s ease-in-out;
+}
+
+.card img:hover {
+    scale: 1.1;
+    transform: rotate(15deg);
 }
 
 .card h2 {
-    margin-top: 10px;
-    margin-bottom: 5px;
     font-size: 24px;
+    padding: 1rem 0;
     font-weight: bold;
     text-align: center;
 }
@@ -83,76 +91,86 @@ footer a:hover {
     justify-content: center;
 }
 
-.collection button {
-    margin-top: 10px;
+.single-card {
+}
+
+.single-card button {
     padding: 10px;
     background-color: #333;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 1rem;
     cursor: pointer;
     font-size: 16px;
     text-transform: uppercase;
 }
 
-.collection button:hover {
+.single-card button:hover {
     background-color: #555;
 }
 
-.edit-form {
-    display: none;
-    margin-top: 20px;
-    padding: 10px;
+.form {
+    display: flex;
+    gap: 1rem;
     background-color: white;
     border: 1px solid #ccc;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 2px 5px rgb(0 0 0 / 30%);
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+    margin: auto;
+    padding: 2rem;
+    border-radius: 1rem;
 }
 
-.edit-form label {
+.form label {
     display: block;
-    margin-bottom: 5px;
     font-size: 16px;
     font-weight: bold;
 }
 
-.edit-form input[type="text"],
-.edit-form textarea {
+.form input[type="text"],
+.form input[type="number"],
+.form textarea {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-bottom: 10px;
+    border-radius: 1rem;
     font-size: 16px;
     line-height: 1.5;
 }
 
-.edit-form button[type="submit"] {
+.form button[type="submit"],
+.form a,
+.index a {
     padding: 10px;
     background-color: #333;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 1rem;
     cursor: pointer;
     font-size: 16px;
     text-transform: uppercase;
 }
 
-.edit-form button[type="submit"]:hover {
+.form button[type="submit"]:hover,
+.form a:hover {
     background-color: #555;
 }
 
-.edit-form button[type="button"] {
+.form button[type="button"] {
     padding: 10px;
     background-color: #ccc;
     color: black;
     border: none;
-    border-radius: 5px;
+    border-radius: 1rem;
     cursor: pointer;
     font-size: 16px;
     text-transform: uppercase;
 }
 
-.edit-form button[type="button"]:hover {
+.form button[type="button"]:hover {
     background-color: #bbb;
 }
 
@@ -170,7 +188,21 @@ input[type="text"] {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 1rem;
-    margin-bottom: 10px;
     font-size: 16px;
     line-height: 1.5;
+}
+
+.buttons {
+    display: flex;
+    align-self: center;
+    gap: 1rem;
+}
+
+.wrapper {
+    min-height: 87.85vh;
+    display: flex;
+}
+
+.properties {
+    font-weight: bold;
 }

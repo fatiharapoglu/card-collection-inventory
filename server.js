@@ -6,6 +6,7 @@ require("dotenv").config();
 
 const cardsRouter = require("./routes/cards");
 const indexRouter = require("./routes/index");
+const newRouter = require("./routes/new");
 const notFound = require("./middleware/404");
 
 mongoose.set("strictQuery", false);
@@ -15,10 +16,12 @@ const port = process.env.PORT || 3000;
 app.set("view engine", "ejs");
 app.use(express.json());
 app.use(express.static("./public"));
+app.use(express.urlencoded({ extended: false }));
 app.use(expressLayouts);
 
 app.use("/", indexRouter);
 app.use("/cards", cardsRouter);
+app.use("/new", newRouter);
 app.use(notFound);
 
 const start = async () => {

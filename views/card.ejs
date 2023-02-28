@@ -1,8 +1,11 @@
 <div class="container">
-    <div class="card">
-        <img src="https://via.placeholder.com/150x225" alt="card" />
-        <h2>Card Name</h2>
-        <p>Card Description</p>
+    <div class="single-card">
+        <img src="assets/card.webp" alt="card" />
+        <h2><%= card.name %></h2>
+        <p><%= card.power %></p>
+        <p><%= card.provision %></p>
+        <p><%= card.faction %></p>
+        <p><%= card.type %></p>
         <button class="edit-btn">Edit</button>
         <button class="delete-btn">Delete</button>
         <form class="edit-form">

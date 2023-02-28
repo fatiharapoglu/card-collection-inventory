@@ -2,14 +2,14 @@
     <ul class="collection">
         <% cards.forEach(card => { %>
         <li class="card">
-            <h2><%= card.name %></h2>
-            <p><%= card.power %></p>
-            <p><%= card.provision %></p>
-            <p><%= card.faction %></p>
-            <p><%= card.type %></p>
             <a href="/cards/<%= card._id %>"
                 ><img src="assets/card.webp" alt="<%= card.name %>"
             /></a>
+            <h2><%= card.name %></h2>
+            <p>Power: <span class="properties"><%= card.power %></span></p>
+            <p>Provision: <span class="properties"><%= card.provision %></span></p>
+            <p>Faction: <span class="properties"><%= card.faction %></span></p>
+            <p>Type: <span class="properties"><%= card.type %></span></p>
         </li>
         <% }); %>
     </ul>
