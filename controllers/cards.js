@@ -1,4 +1,4 @@
-const Card = require("../models/Card");
+const Card = require("../models/card");
 
 const addCard = async (req, res) => {
     const card = await Card.create(req.body);

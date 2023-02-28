@@ -3,7 +3,8 @@
     "version": "1.0.0",
     "description": "express",
     "scripts": {
-        "start": "nodemon server.js"
+        "start": "nodemon server.js",
+        "populate": "node populate.js"
     },
     "repository": {
         "type": "git",

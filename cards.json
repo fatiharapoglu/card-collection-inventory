@@ -1,0 +1,42 @@
+[
+    {
+        "name": "Geralt of Rivia",
+        "power": 10,
+        "provision": 12,
+        "faction": "Neutral",
+        "type": "Unit"
+    },
+    {
+        "name": "Yennefer of Vengerberg",
+        "power": 6,
+        "provision": 10,
+        "faction": "Neutral",
+        "type": "Unit"
+    },
+    { "name": "Eithné", "power": 5, "provision": 10, "faction": "Scoia'tael", "type": "Leader" },
+    {
+        "name": "Crach an Craite",
+        "power": 4,
+        "provision": 9,
+        "faction": "Skellige",
+        "type": "Leader"
+    },
+    {
+        "name": "Foltest",
+        "power": 4,
+        "provision": 9,
+        "faction": "Northern Realms",
+        "type": "Leader"
+    },
+    { "name": "Vernossiel", "power": 6, "provision": 10, "faction": "Scoia'tael", "type": "Unit" },
+    { "name": "Lambert", "power": 5, "provision": 10, "faction": "Neutral", "type": "Unit" },
+    { "name": "Nivellen", "power": 8, "provision": 10, "faction": "Neutral", "type": "Unit" },
+    {
+        "name": "Tibor Eggebracht",
+        "power": 7,
+        "provision": 10,
+        "faction": "Nilfgaard",
+        "type": "Unit"
+    },
+    { "name": "Ciri", "power": 8, "provision": 10, "faction": "Neutral", "type": "Unit" }
+]
