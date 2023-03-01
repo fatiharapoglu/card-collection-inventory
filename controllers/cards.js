@@ -1,29 +1,45 @@
 const Card = require("../models/card");
 
 const getAllCards = async (req, res) => {
-    const cards = await Card.find({});
-    res.status(200).render("cards", { cards });
+    try {
+        const cards = await Card.find({});
+        res.status(200).render("cards", { cards });
+    } catch (error) {
+        res.status(500).send(`Something went wrong. Error: ${error}`);
+    }
 };
 
 const getCard = async (req, res) => {
-    const { id: cardID } = req.params;
-    const card = await Card.findOne({ _id: cardID });
-    res.status(200).render("card", { card });
+    try {
+        const { id: cardID } = req.params;
+        const card = await Card.findOne({ _id: cardID });
+        res.status(200).render("card", { card });
+    } catch (error) {
+        res.status(500).send(`Something went wrong. Error: ${error}`);
+    }
 };
 
 const editCard = async (req, res) => {
-    const { id: cardID } = req.params;
-    const card = await Card.findOneAndUpdate({ _id: cardID }, req.body, {
-        new: true,
-        runValidators: true,
-    });
-    res.status(200).render("card", { card });
+    try {
+        const { id: cardID } = req.params;
+        const card = await Card.findOneAndUpdate({ _id: cardID }, req.body, {
+            new: true,
+            runValidators: true,
+        });
+        res.status(200).render("card", { card });
+    } catch (error) {
+        res.status(500).send(`Something went wrong. Error: ${error}`);
+    }
 };
 
 const deleteCard = async (req, res) => {
-    const { id: cardID } = req.params;
-    const card = await Card.findOneAndDelete({ _id: cardID });
-    getAllCards(req, res);
+    try {
+        const { id: cardID } = req.params;
+        const card = await Card.findOneAndDelete({ _id: cardID });
+        getAllCards(req, res);
+    } catch (error) {
+        res.status(500).send(`Something went wrong. Error: ${error}`);
+    }
 };
 
 module.exports = { getAllCards, getCard, deleteCard, editCard };
