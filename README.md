@@ -5,4 +5,4 @@
 -   populate more
 -   fix minmax, more validations
 -   something about images
--
+-   add loading state
