@@ -1,7 +1,9 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const expressLayouts = require("express-ejs-layouts");
-const ejs = require("ejs");
+const methodOverride = require("method-override");
+const bodyParser = require("body-parser");
+require("ejs");
 require("dotenv").config();
 
 const cardsRouter = require("./routes/cards");
@@ -16,8 +18,9 @@ const port = process.env.PORT || 3000;
 app.set("view engine", "ejs");
 app.use(express.static("public"));
 app.use(expressLayouts);
-app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(methodOverride("_method"));
 
 app.use("/", indexRouter);
 app.use("/cards", cardsRouter);

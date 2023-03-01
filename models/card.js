@@ -24,7 +24,7 @@ const CardSchema = new Schema({
     type: { type: String, required: true },
 });
 
-CardSchema.virtual("url").get(() => {
+CardSchema.virtual("url").get(function () {
     return `/cards/${this._id}`;
 });
 

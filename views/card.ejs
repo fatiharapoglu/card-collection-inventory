@@ -1,14 +1,56 @@
 <div class="container">
     <div class="single-card">
         <img src="assets/card.webp" alt="<%= card.name %>" />
-        <h2><%= card.name %></h2>
-        <p>Power: <span class="properties"><%= card.power %></span></p>
-        <p>Provision: <span class="properties"><%= card.provision %></span></p>
-        <p>Faction: <span class="properties"><%= card.faction %></span></p>
-        <p>Type: <span class="properties"><%= card.type %></span></p>
+        <form class="form" method="POST" action="<%= card.url %>?_method=PATCH">
+            <label for="name">Name:</label>
+            <input
+                type="text"
+                name="name"
+                placeholder="Card name"
+                value="<%= card.name %>"
+                required
+            />
+            <label for="power">Power:</label>
+            <input
+                type="number"
+                name="power"
+                placeholder="Power (number)"
+                value="<%= card.power %>"
+                required
+            />
+            <label for="provision">Provision:</label>
+            <input
+                type="number"
+                name="provision"
+                placeholder="Provision (number)"
+                value="<%= card.provision %>"
+                required
+            />
+            <label for="faction">Faction:</label>
+            <input
+                type="text"
+                name="faction"
+                placeholder="Faction name (nilfgaard, neutral etc.)"
+                value="<%= card.faction %>"
+                required
+            />
+            <label for="type">Type:</label>
+            <input
+                type="text"
+                name="type"
+                placeholder="Type (unit, leader etc.)"
+                value="<%= card.type %>"
+                required
+            />
+            <div class="buttons">
+                <button type="submit">Save</button>
+                <a href="/">Cancel</a>
+            </div>
+        </form>
         <div class="buttons">
-            <button type="submit">Save</button>
-            <button type="button" class="cancel-btn">Cancel</button>
+            <form method="POST" action="<%= card.url %>?_method=DELETE">
+                <button type="submit">Delete Card</button>
+            </form>
         </div>
     </div>
 </div>

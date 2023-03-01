@@ -104,21 +104,6 @@ footer a:hover {
     translate: -40px;
 }
 
-.single-card button {
-    padding: 10px;
-    background-color: #333;
-    color: white;
-    border: none;
-    border-radius: 1rem;
-    cursor: pointer;
-    font-size: 16px;
-    text-transform: uppercase;
-}
-
-.single-card button:hover {
-    background-color: #555;
-}
-
 .form {
     display: flex;
     gap: 1rem;
@@ -153,7 +138,8 @@ footer a:hover {
 
 .form button[type="submit"],
 .form a,
-.index a {
+.index a,
+.single-card button {
     padding: 10px;
     background-color: #333;
     color: white;
@@ -215,4 +201,13 @@ input[type="text"] {
 
 .properties {
     font-weight: bold;
+}
+
+button {
+    min-width: 100px;
+}
+
+a {
+    min-width: 100px;
+    text-align: center;
 }

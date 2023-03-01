@@ -15,3 +15,14 @@ http://localhost:3000/cards
 ### 
 http://localhost:3000/cards/63fe2fdb510fdf3690f6386f
 
+###
+PATCH http://localhost:3000/cards/63fe2fdb510fdf3690f6386e HTTP/1.1
+content-type: application/x-www-form-urlencoded
+
+{
+    "name": "Geralt 234",
+    "power": 20,
+    "provision": 10 ,
+    "faction": "Neutral",
+    "type": "Witcher"
+}
