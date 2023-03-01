@@ -5,7 +5,7 @@ const getAllCards = async (req, res) => {
         const cards = await Card.find({});
         res.status(200).render("cards", { cards });
     } catch (error) {
-        res.status(500).send(`Something went wrong. Error: ${error}`);
+        res.status(500).render("error", { error });
     }
 };
 
@@ -15,7 +15,7 @@ const getCard = async (req, res) => {
         const card = await Card.findOne({ _id: cardID });
         res.status(200).render("card", { card });
     } catch (error) {
-        res.status(500).send(`Something went wrong. Error: ${error}`);
+        res.status(500).render("error", { error });
     }
 };
 
@@ -28,7 +28,7 @@ const editCard = async (req, res) => {
         });
         res.status(200).render("card", { card });
     } catch (error) {
-        res.status(500).send(`Something went wrong. Error: ${error}`);
+        res.status(500).render("error", { error });
     }
 };
 
@@ -38,7 +38,7 @@ const deleteCard = async (req, res) => {
         const card = await Card.findOneAndDelete({ _id: cardID });
         getAllCards(req, res);
     } catch (error) {
-        res.status(500).send(`Something went wrong. Error: ${error}`);
+        res.status(500).render("error", { error });
     }
 };
 

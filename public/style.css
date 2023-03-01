@@ -211,3 +211,9 @@ a {
     min-width: 100px;
     text-align: center;
 }
+
+.error {
+    margin: 0 auto;
+    padding: 40vh;
+    font-size: xx-large;
+}
