@@ -1,10 +1,7 @@
-# expressInventory
+# Gwent Card Collection (Express Inventory)
 
--   add search fn
--   improve visually
--   populate more
--   fix minmax, more validations
--   something about images
--   add loading state
--   add footer and come back later
--   safety things
+[The Odin Project](https://www.theodinproject.com/lessons/nodejs-inventory-application)'s node path Express inventory project.
+
+Created with Express and EJS.
+
+![RPS](public/assets/readme.png)
