@@ -26,3 +26,8 @@ content-type: application/x-www-form-urlencoded
     "faction": "Neutral",
     "type": "Witcher"
 }
+
+###
+
+POST http://localhost:3000/?a=b&abc=bb HTTP/1.1
+content-type: application/x-www-form-urlencoded

@@ -7,6 +7,8 @@
 a {
     color: inherit;
     text-decoration: none;
+    min-width: 100px;
+    text-align: center;
 }
 
 body {
@@ -16,21 +18,27 @@ body {
 }
 
 header {
+    height: 12.5vh;
     background-color: #333;
     color: white;
     padding: 10px;
-    text-align: center;
     font-size: 24px;
     font-weight: bold;
     text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 footer {
+    height: 7.5vh;
     background-color: #333;
     color: white;
     padding: 10px;
-    text-align: center;
     font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 footer a {
@@ -62,7 +70,7 @@ footer a:hover {
     width: 300px;
     height: auto;
     translate: -25px;
-    transition: all 0.2s ease-in-out;
+    transition: scale 0.2s ease-in-out, transform 0.2s ease-in-out;
 }
 
 .card img:hover {
@@ -127,6 +135,7 @@ footer a:hover {
 
 .form input[type="text"],
 .form input[type="number"],
+.form input[type="search"],
 .form textarea {
     width: 100%;
     padding: 10px;
@@ -171,21 +180,12 @@ footer a:hover {
 }
 
 .index {
-    height: 87.85vh;
+    height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 1rem;
-}
-
-input[type="text"] {
-    width: 33%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 1rem;
-    font-size: 16px;
-    line-height: 1.5;
 }
 
 .buttons {
@@ -195,8 +195,10 @@ input[type="text"] {
 }
 
 .wrapper {
-    min-height: 87.85vh;
+    min-height: 80vh;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .properties {
@@ -212,20 +214,14 @@ button:hover,
     background-color: #555;
 }
 
-a {
-    min-width: 100px;
-    text-align: center;
-}
-
 .error {
     margin: 0 auto;
-    padding: 40vh;
     font-size: xx-large;
 }
 
 .search-form {
     display: flex;
-    width: 100%;
+    width: 500px;
     gap: 0.5rem;
     justify-content: center;
 }
@@ -241,4 +237,8 @@ a {
 .search-form input {
     border: 1px solid black;
     border-radius: 1rem 0 0 1rem;
+    padding: 10px;
+    font-size: 16px;
+    line-height: 1.5;
+    width: 100%;
 }

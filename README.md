@@ -7,3 +7,4 @@
 -   something about images
 -   add loading state
 -   add footer and come back later
+-   safety things
