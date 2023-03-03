@@ -5,4 +5,5 @@
 -   populate more
 -   fix minmax, more validations
 -   something about images
--
+-   add loading state
+-   add footer and come back later
