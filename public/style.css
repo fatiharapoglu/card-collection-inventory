@@ -30,6 +30,12 @@ header {
     justify-content: center;
 }
 
+header img {
+    width: 100px;
+    padding: 1rem;
+    height: auto;
+}
+
 footer {
     height: 7.5vh;
     background-color: #333;
@@ -42,11 +48,11 @@ footer {
 }
 
 footer a {
-    color: lightblue;
+    color: #fefda7;
 }
 
 footer a:hover {
-    color: aqua;
+    color: #ffd900;
 }
 
 .container {
