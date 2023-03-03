@@ -207,6 +207,11 @@ button {
     min-width: 100px;
 }
 
+button:hover,
+.buttons a:hover {
+    background-color: #555;
+}
+
 a {
     min-width: 100px;
     text-align: center;
@@ -216,4 +221,24 @@ a {
     margin: 0 auto;
     padding: 40vh;
     font-size: xx-large;
+}
+
+.search-form {
+    display: flex;
+    width: 100%;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+.search-form button {
+    border: 1px solid black;
+    border-radius: 0 1rem 1rem 0;
+    cursor: pointer;
+    width: 50px;
+    background-color: white;
+}
+
+.search-form input {
+    border: 1px solid black;
+    border-radius: 1rem 0 0 1rem;
 }
