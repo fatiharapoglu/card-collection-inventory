@@ -20,8 +20,16 @@ const CardSchema = new Schema({
         min: [0, "Provision can't be lower than 0"],
         max: [20, "Provision can't be higher than 20"],
     },
-    faction: { type: String, required: true },
-    type: { type: String, required: true },
+    faction: {
+        type: String,
+        required: true,
+        maxLength: [25, "Faction should be lower than 25 characters"],
+    },
+    type: {
+        type: String,
+        required: true,
+        maxLength: [20, "Type should be lower than 20 characters"],
+    },
 });
 
 CardSchema.virtual("url").get(function () {

@@ -1,11 +1,17 @@
 <div class="wrapper">
     <form class="form" method="POST" action="/new">
         <label for="name">Name:</label>
-        <input type="text" name="name" placeholder="Card name" required />
+        <input type="text" name="name" placeholder="Card name (max: 40)" required />
         <label for="power">Power:</label>
-        <input type="number" name="power" placeholder="Power (number)" required />
+        <input type="number" name="power" placeholder="Power (number, max: 20)" min="0" required />
         <label for="provision">Provision:</label>
-        <input type="number" name="provision" placeholder="Provision (number)" required />
+        <input
+            type="number"
+            name="provision"
+            placeholder="Provision (number, max: 20)"
+            min="0"
+            required
+        />
         <label for="faction">Faction:</label>
         <input
             type="text"
