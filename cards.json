@@ -38,5 +38,103 @@
         "faction": "Nilfgaard",
         "type": "Unit"
     },
-    { "name": "Ciri", "power": 8, "provision": 10, "faction": "Neutral", "type": "Unit" }
+    { "name": "Ciri", "power": 8, "provision": 10, "faction": "Neutral", "type": "Unit" },
+    { "name": "Dandelion", "power": 2, "provision": 7, "faction": "Neutral", "type": "Unit" },
+    {
+        "name": "Francesca Findabair",
+        "power": 3,
+        "provision": 9,
+        "faction": "Scoia'tael",
+        "type": "Leader"
+    },
+    {
+        "name": "Emhyr var Emreis",
+        "power": 4,
+        "provision": 9,
+        "faction": "Nilfgaard",
+        "type": "Leader"
+    },
+    { "name": "Vesemir", "power": 4, "provision": 8, "faction": "Neutral", "type": "Unit" },
+    {
+        "name": "Iris von Everec",
+        "power": 6,
+        "provision": 10,
+        "faction": "Neutral",
+        "type": "Unit"
+    },
+    {
+        "name": "Phillipa Eilhart",
+        "power": 5,
+        "provision": 10,
+        "faction": "Neutral",
+        "type": "Unit"
+    },
+    {
+        "name": "Eredin Bréacc Glas",
+        "power": 6,
+        "provision": 10,
+        "faction": "Monsters",
+        "type": "Leader"
+    },
+    {
+        "name": "Henselt",
+        "power": 4,
+        "provision": 9,
+        "faction": "Northern Realms",
+        "type": "Leader"
+    },
+    { "name": "Yarpen Zigrin", "power": 3, "provision": 8, "faction": "Dwarves", "type": "Unit" },
+    { "name": "Roche", "power": 5, "provision": 10, "faction": "Northern Realms", "type": "Unit" },
+    { "name": "Regis", "power": 5, "provision": 11, "faction": "Neutral", "type": "Unit" },
+    {
+        "name": "Isengrim Faoiltiarna",
+        "power": 6,
+        "provision": 10,
+        "faction": "Scoia'tael",
+        "type": "Unit"
+    },
+    {
+        "name": "Vattier de Rideaux",
+        "power": 4,
+        "provision": 9,
+        "faction": "Nilfgaard",
+        "type": "Unit"
+    },
+    {
+        "name": "Cahir Mawr Dyffryn aep Ceallach",
+        "power": 5,
+        "provision": 10,
+        "faction": "Nilfgaard",
+        "type": "Unit"
+    },
+    {
+        "name": "Sigismund Dijkstra",
+        "power": 4,
+        "provision": 10,
+        "faction": "Neutral",
+        "type": "Unit"
+    },
+    {
+        "name": "Síle de Tansarville",
+        "power": 4,
+        "provision": 8,
+        "faction": "Neutral",
+        "type": "Unit"
+    },
+    {
+        "name": "Gaunter O'Dimm",
+        "power": 10,
+        "provision": 12,
+        "faction": "Neutral",
+        "type": "Unit"
+    },
+    {
+        "name": "Anna Henrietta",
+        "power": 4,
+        "provision": 9,
+        "faction": "Nilfgaard",
+        "type": "Leader"
+    },
+    { "name": "Kambi", "power": 1, "provision": 9, "faction": "Skellige", "type": "Unit" },
+    { "name": "Ihuarraquax", "power": 6, "provision": 11, "faction": "Monsters", "type": "Unit" }
 ]
