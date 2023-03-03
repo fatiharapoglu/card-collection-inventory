@@ -7,6 +7,7 @@ const helmet = require("helmet");
 const cors = require("cors");
 const xss = require("xss-clean");
 const rateLimiter = require("express-rate-limit");
+const favicon = require("serve-favicon");
 require("ejs");
 require("dotenv").config();
 
@@ -21,6 +22,7 @@ const port = process.env.PORT || 3000;
 
 app.set("view engine", "ejs");
 app.set("trust proxy", 1);
+app.use(favicon("public/assets/favicon.png"));
 app.use(express.static("public"));
 app.use(expressLayouts);
 app.use(bodyParser.json());
