@@ -1,7 +1,8 @@
 const mongoose = require("mongoose");
+require("dotenv").config();
+
 const Card = require("./models/card");
 const jsonCards = require("./cards.json");
-require("dotenv").config();
 
 const start = async () => {
     try {
